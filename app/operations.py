@@ -19,6 +19,7 @@ def add_task(task_list):
         print(B + "\n------ CREAR NUEVA TAREA ------\n")
 
         nombre = input(Y + "·Nombre de la tarea: " + RA).strip().capitalize()
+        logging.info(f"Intentando crear tarea.")
         
         while nombre == "":
             print(R + "\n■ Error: El nombre no puede estar vacío.\n")
@@ -48,13 +49,13 @@ def add_task(task_list):
 
         task_list.append(nueva_tarea)
         print(f"{G}\nTarea '{nombre}' añadida con éxito.{RA}")
-        logging.info(f"Tarea creada con éxito: {nombre}")
+        logging.info(f"Tarea CREADA con éxito: {nombre}")
 
         return True
 
     except Exception as e:
         print(R + f"\n■ Error al procesar la tarea: {e}{RA}")
-        logging.error("Tarea no creada: Ocurrió un error crítico al crear la tarea.")
+        logging.error("Tarea NO CREADA: Ocurrió un error crítico al crear la tarea.")
 
         return False
 
@@ -85,12 +86,12 @@ def delete_task(task_list):
             # Intentamos acceder por índice (se resta -1 porque empieza en 0)
             tarea_eliminada = task_list.pop(number - 1)
             print(f"\nTarea {G}'{tarea_eliminada.title}'{RA} {R}eliminada{RA} con éxito.")
-            logging.info(f"Tarea eliminada con éxito: {tarea_eliminada.title}")
+            logging.info(f"Tarea ELIMINADA con éxito: {tarea_eliminada.title}")
             return True
 
         except (ValueError, IndexError):
             print(R + "\n■ Error: El número de la tarea no existe." + RA)
-            logging.error("Intento de eliminar tarea fallido: Número de tarea inválido.")
+            logging.error("Intento de eliminar tarea FALLIDO: Número de tarea inválido.")
 
 
 # --- Función modificar tareas ---
@@ -137,5 +138,5 @@ def edit_task(task_list):
         tarea.priority = new_priority.capitalize()
 
     print(G + f"\nTarea actualizada con éxito." + RA)
-    logging.info(f"Tarea editada con éxito: {tarea.title}")
+    logging.info(f"Tarea EDITADA con éxito: {tarea.title}")
     return True

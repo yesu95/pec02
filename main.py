@@ -14,6 +14,8 @@ logging.basicConfig(
 gestorActive = True
 task_list = []
 
+logging.info("La aplicación se ha iniciado correctamente.")
+
 os.system("cls")
 
 while gestorActive:
