@@ -15,7 +15,9 @@ Por ningún lado estoy viendo que salgan dichos commits en la web ya que el úni
 git log --all --graph --oneline --decorate
 ```
 
-![Logo]([https://ibb.co/FqBRjZJY](https://i.ibb.co/NnLcHDpN/commits.png))
+<p align="center">
+  <img src="https://i.ibb.co/NnLcHDpN/commits.png" alt="Historial de commits" width="800">
+</p>
 
 ## Estructura del Proyecto
 
