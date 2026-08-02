@@ -30,7 +30,7 @@ while gestorActive:
     print(Y + "[4]" + RA + " Eliminar tarea.")
     print(Y + "[5]" + RA + " SALIR.\n" + RA)
 
-    action = input(Y + "Elige una opción [1-5]: " + RA).strip()
+    action = input(Y + "·Elige una opción [1-5]: " + RA).strip()
 
     if action == "1":
         add_task(task_list)
@@ -38,8 +38,8 @@ while gestorActive:
     elif action == "2":
         show_tasks(task_list)
 
-    # elif action == "3":
-    #     pass
+    elif action == "3":
+        edit_task(task_list)
 
     elif action == "4":
         delete_task(task_list)
@@ -54,5 +54,5 @@ while gestorActive:
         logging.error("Opción no válida seleccionada en el menú principal.")
 
     if gestorActive:
-        input(M + "\nPresiona Enter ↵ para continuar...")
+        input(M + "\n·Presiona Enter ↵ para continuar...")
         os.system("cls")
