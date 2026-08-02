@@ -3,7 +3,14 @@ from app.models import To_do
 import logging
 
 
-# Función para mostrar tareas
+# --- Función para mostrar tareas --- 
+"""
+    Muestra por pantalla todas las tareas registradas.
+
+    Returns: False si lista vacía. Sino muestra
+            las tareas numeradas.
+"""
+# ---------------------------------
 def tasks(task_list):
     if not task_list:
         print(Y + "No hay tareas registradas." + RA)
@@ -13,7 +20,17 @@ def tasks(task_list):
             print(f"{G}{indice}. {RA}{task}")
 
 # --- Función añadir tarea ---
+"""
+Solicita los datos al usuario y añade una nueva tarea a la lista.
 
+El nombre de la tarea es obligatorio, descripción y
+prioridad opcionales. Prioridad solo puede ser Alta, Media
+o Baja.
+
+Returns: True si la tarea se crea correctamente.
+        False si ocurre un error o la operación falla.
+"""
+# ---------------------------------
 def add_task(task_list):
     try:
         print(B + "\n------ CREAR NUEVA TAREA ------\n")
@@ -60,13 +77,26 @@ def add_task(task_list):
         return False
 
 # --- Función mostrar tareas ---
-
+"""
+Muestra encabezado y listado de tareas registradas llamando
+a la función tasks().
+"""
+# ---------------------------------
 def show_tasks(task_list):
     print(B + "\n------ TAREAS REGISTRADAS ------\n" + RA)
     tasks(task_list)
 
 # --- Función eliminar tareas ---        
+"""
+Elimina una tarea seleccionada por el usuario.
 
+Solicita el número de la tarea que se desea eliminar y permite
+cancelar la operación. Si se intenta eliminar una tarea que no existe, muestra error.
+
+Returns: True si la tarea se elimina correctamente.
+        False si el usuario cancela la operación.
+"""
+# ---------------------------------
 def delete_task(task_list):
     print(B + "\n------ ELIMINAR TAREA ------\n" + RA)
     tasks(task_list)
@@ -95,7 +125,16 @@ def delete_task(task_list):
 
 
 # --- Función modificar tareas ---
+"""
+Modifica los datos de una tarea existente.
 
+Permite cambiar título, (Si existe): descripción y  prioridad.
+Si un campo se deja vacío, conserva su valor anterior.
+
+Returns: True si la tarea se edita correctamente.
+        False si el usuario cancela la operación.
+"""
+# ---------------------------------
 def edit_task(task_list):
     print(B + "\n------ EDITAR TAREA ------\n" + RA)
 
