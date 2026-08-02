@@ -2,11 +2,15 @@ from app.colors import *
 from app.models import To_do
 import logging
 
-# --- Función mostrar tareas básica --- 
 
+# Función para mostrar tareas
 def tasks(task_list):
-    for indice, task in enumerate(task_list, 1):
-        print(f"{G}{indice}. {RA}{task}")
+    if not task_list:
+        print(Y + "No hay tareas registradas." + RA)
+        return False
+    else:
+        for indice, task in enumerate(task_list, 1):
+            print(f"{G}{indice}. {RA}{task}")
 
 # --- Función añadir tarea ---
 
@@ -58,24 +62,23 @@ def add_task(task_list):
 
 def show_tasks(task_list):
     print(B + "\n------ TAREAS REGISTRADAS ------\n" + RA)
-    if not task_list:
-        print(Y + "No hay tareas registradas." + RA)
-    else:
-        tasks(task_list)
+    tasks(task_list)
 
 # --- Función eliminar tareas ---        
 
 def delete_task(task_list):
     print(B + "\n------ ELIMINAR TAREA ------\n" + RA)
-    if not task_list:
-        print(Y + "No hay tareas registradas." + RA)
-        return False
-    else:
-        tasks(task_list)
+    tasks(task_list)
 
     while True:
         try:
-            seleccion = input(Y + "\n·Introduce el número de la tarea que deseas eliminar: " + RA).strip()
+            seleccion = input(Y + "\n·Introduce el número de la tarea que deseas eliminar (o 'S' para salir): " + RA).strip()
+
+            # Salir con s, salir o enter vacío
+            if seleccion.lower() == 's' or seleccion == "" or seleccion.lower() == "salir":
+                print(R + "\n--- Operación cancelada ---" + RA)
+                return False
+            
             tasks(task_list)
             number = int(seleccion)
 
@@ -94,19 +97,15 @@ def delete_task(task_list):
 
 def edit_task(task_list):
     print(B + "\n------ EDITAR TAREA ------\n" + RA)
-    if not task_list:
-        print(Y + "No hay tareas registradas." + RA)
-        return False
 
-    for indice, task in enumerate(task_list, 1):
-        print(f"{G}{indice}. {RA}{task}")
-
+    tasks(task_list)
+    
     while True:
         try:
             seleccion = input(Y + "\n·Introduce el número de la tarea que deseas editar (o 'S' para salir): " + RA).strip()
             
             if seleccion.lower() == 's' or seleccion == "" or seleccion.lower() == "salir":
-                print(Y + "\n---Operación cancelada---" + RA)
+                print(R + "\n--- Operación cancelada ---" + RA)
                 return False
 
             # Intentamos acceder por índice (se resta -1 porque empieza en 0)(Misma lógica que en delete_task)

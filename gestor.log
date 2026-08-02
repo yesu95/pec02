@@ -15,3 +15,50 @@
 2026-08-02 03:20:22 - INFO - Tarea editada con éxito: Adios
 2026-08-02 03:20:48 - INFO - Tarea editada con éxito: Caca
 2026-08-02 03:21:25 - INFO - La aplicación se ha detenido.
+2026-08-02 03:24:00 - ERROR - Prioridad inválida. Intendando ingresar '-alta' como prioridad.
+2026-08-02 03:24:01 - INFO - Tarea creada con éxito: -290
+2026-08-02 03:24:05 - INFO - Tarea eliminada con éxito: -290
+2026-08-02 03:25:19 - INFO - La aplicación se ha detenido.
+2026-08-02 03:25:26 - INFO - Tarea creada con éxito: Hola
+2026-08-02 03:25:39 - INFO - Tarea editada con éxito: Hola
+2026-08-02 03:25:41 - INFO - Tarea eliminada con éxito: Hola
+2026-08-02 03:25:57 - ERROR - Nombre inválido. Intentando ingresar un nombre vacíos.
+2026-08-02 03:25:57 - ERROR - Nombre inválido. Intentando ingresar un nombre vacíos.
+2026-08-02 03:25:58 - ERROR - Nombre inválido. Intentando ingresar un nombre vacíos.
+2026-08-02 03:25:59 - ERROR - Tarea no creada: Ocurrió un error crítico al crear la tarea.
+2026-08-02 03:26:16 - INFO - La aplicación se ha detenido.
+2026-08-02 03:26:34 - INFO - La aplicación se ha detenido.
+2026-08-02 03:26:42 - ERROR - Nombre inválido. Intentando ingresar un nombre vacíos.
+2026-08-02 03:26:42 - ERROR - Nombre inválido. Intentando ingresar un nombre vacíos.
+2026-08-02 03:26:43 - ERROR - Tarea no creada: Ocurrió un error crítico al crear la tarea.
+2026-08-02 03:27:34 - INFO - Tarea creada con éxito: Hola
+2026-08-02 03:27:39 - INFO - Tarea eliminada con éxito: Hola
+2026-08-02 03:27:43 - ERROR - Nombre inválido. Intentando ingresar un nombre vacíos.
+2026-08-02 03:27:44 - ERROR - Tarea no creada: Ocurrió un error crítico al crear la tarea.
+2026-08-02 03:27:53 - INFO - La aplicación se ha detenido.
+2026-08-02 03:31:55 - INFO - La aplicación se ha detenido.
+2026-08-02 03:32:03 - ERROR - Intento de eliminar tarea fallido: Número de tarea inválido.
+2026-08-02 03:32:04 - ERROR - Intento de eliminar tarea fallido: Número de tarea inválido.
+2026-08-02 03:32:08 - ERROR - Intento de eliminar tarea fallido: Número de tarea inválido.
+2026-08-02 03:32:10 - ERROR - Intento de eliminar tarea fallido: Número de tarea inválido.
+2026-08-02 03:32:23 - INFO - Tarea creada con éxito: Hola
+2026-08-02 03:32:36 - INFO - Tarea editada con éxito: Adios
+2026-08-02 03:32:39 - INFO - Tarea eliminada con éxito: Adios
+2026-08-02 03:35:12 - ERROR - Intento de eliminar tarea fallido: Número de tarea inválido.
+2026-08-02 03:38:51 - ERROR - Intento de eliminar tarea fallido: Número de tarea inválido.
+2026-08-02 03:38:52 - ERROR - Intento de eliminar tarea fallido: Número de tarea inválido.
+2026-08-02 03:45:41 - ERROR - Nombre inválido. Intentando ingresar un nombre vacíos.
+2026-08-02 03:45:42 - ERROR - Nombre inválido. Intentando ingresar un nombre vacíos.
+2026-08-02 03:45:43 - ERROR - Tarea no creada: Ocurrió un error crítico al crear la tarea.
+2026-08-02 03:46:18 - INFO - La aplicación se ha detenido.
+2026-08-02 03:46:46 - ERROR - Opción no válida seleccionada en el menú principal.
+2026-08-02 03:46:48 - INFO - La aplicación se ha detenido.
+2026-08-02 03:47:12 - ERROR - Intento de eliminar tarea fallido: Número de tarea inválido.
+2026-08-02 03:47:20 - ERROR - Opción no válida seleccionada en el menú principal.
+2026-08-02 03:47:21 - ERROR - Opción no válida seleccionada en el menú principal.
+2026-08-02 03:47:22 - ERROR - Opción no válida seleccionada en el menú principal.
+2026-08-02 03:47:28 - INFO - Tarea creada con éxito: Hola
+2026-08-02 03:47:35 - INFO - La aplicación se ha detenido.
+2026-08-02 03:47:41 - INFO - La aplicación se ha detenido.
+2026-08-02 03:48:02 - ERROR - Opción no válida seleccionada en el menú principal.
+2026-08-02 03:48:12 - ERROR - Intento de eliminar tarea fallido: Número de tarea inválido.
