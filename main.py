@@ -7,6 +7,7 @@ logging.basicConfig(
     filename="gestor.log", 
     level=logging.INFO, 
     format="%(asctime)s - %(levelname)s - %(message)s",
+    datefmt="%Y-%m-%d %H:%M:%S",
     encoding="utf-8"
 )
 
@@ -16,16 +17,20 @@ task_list = []
 os.system("cls")
 
 while gestorActive:
-    print(B + "========================================")
-    print(B + "         GESTOR DE TAREAS v1.0          ")
-    print(B + "========================================\n")
+    print(B +"""
+
+▀▀█▀▀ ▄▀▀▄ █▀▀▄ █▀▀▀ ▄▀▀▄ ▄▀▀▀
+  █   █▀▀█ █▀▀▄ █▀▀  █▀▀█  ▀▀▄
+  ▀   ▀  ▀ ▀  ▀ ▀▀▀▀ ▀  ▀ ▀▀▀ 
+¡Bienvenido al gestor de tareas!
+    """)
     print(Y + "[1]" + RA + " Crear tarea.")
     print(Y + "[2]" + RA + " Ver tareas.")
     print(Y + "[3]" + RA + " Modificar tareas.")
     print(Y + "[4]" + RA + " Eliminar tarea.")
     print(Y + "[5]" + RA + " SALIR.\n" + RA)
 
-    action = input(Y + "Elige opción (1, 2, 3, 4 o 5): " + RA).strip()
+    action = input(Y + "Elige una opción [1-5]: " + RA).strip()
 
     if action == "1":
         add_task(task_list)
@@ -36,11 +41,11 @@ while gestorActive:
     # elif action == "3":
     #     pass
 
-    # elif action == "4":
-    #     pass
+    elif action == "4":
+        delete_task(task_list)
 
     elif action == "5":
-        print("\nSaliendo del gestor...")
+        print(M + "\nSaliendo del gestor...\n")
         logging.info("La aplicación se ha detenido.")
         gestorActive = False
 
